@@ -5,7 +5,7 @@ import threading
 
 app = Flask(__name__)
 
-scripts = ['1.sh', '2.sh', '3.sh', '4.sh', '5.sh', '6.sh', '7.sh', '8.sh', '9.sh', '10.sh', '11.sh', '12.sh', '13.sh', '14.sh']
+scripts = ['1.sh', '2.sh', '3.sh', '4.sh', '5.sh', '6.sh', '7.sh', '8.sh', '9.sh', '11.sh', '12.sh', '13.sh', '14.sh']
 script_status = {script: {'status': 'not started', 'last_run': None, 'return_code': None} for script in scripts}
 
 def run_scripts_continuously():
