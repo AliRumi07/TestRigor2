@@ -24,7 +24,7 @@ def run_scripts_continuously():
                     'last_run': time.strftime('%Y-%m-%d %H:%M:%S'),
                     'return_code': e.returncode
                 }
-        time.sleep(300)
+        time.sleep(60)
 
 @app.route('/status')
 def get_status():
